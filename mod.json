@@ -1,0 +1,82 @@
+{
+  "title": "That's a Resource",
+  "author": "NotExplosive",
+  "editor_version": "0.6.0",
+  "mod_version": "0.1.0",
+  "default_tile": "floor",
+  "tile_size": 64,
+  "title_screen_level": "",
+  "menu_selected_color": "FFFF00FF",
+  "campaign": {
+    "chapters": [
+      {
+        "level": "first_level",
+        "name": "First Level",
+        "instance_variable_overrides": []
+      }
+    ],
+    "name": "campaign",
+    "save_name": "campaign"
+  },
+  "trait_enums": [
+    {
+      "name": "Phase",
+      "supported_values": [
+        {
+          "name": "Empty",
+          "value": 0
+        },
+        {
+          "name": "Solid",
+          "value": 10
+        }
+      ]
+    }
+  ],
+  "dialogue": "dialogue",
+  "color_aliases": [
+    {
+      "alias": "floor",
+      "color": "222222"
+    },
+    {
+      "alias": "wall",
+      "color": "cecece"
+    },
+    {
+      "alias": "player",
+      "color": "ffaa00"
+    }
+  ],
+  "swap_color": "FFFFFF",
+  "room_size_rule": {
+    "type": "width",
+    "size": 10,
+    "aspect_ratio": "1:1"
+  },
+  "prop_layer_rules": {
+    "default_layer": 0,
+    "rules": []
+  },
+  "layers": [
+    {
+      "name": "Bottom",
+      "shader": null
+    },
+    {
+      "name": "Middle",
+      "shader": null
+    },
+    {
+      "name": "Top",
+      "shader": null
+    }
+  ],
+  "color_keys": [
+    "color"
+  ],
+  "screen_size": {
+    "width": 1920,
+    "height": 1080
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "icon": "player",
+  "sort": 0,
+  "world_overrides": [
+    {
+      "key": "spawn_entity",
+      "value": "player",
+      "type": 0
+    }
+  ]
+}
