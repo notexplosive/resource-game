@@ -1,0 +1,12 @@
+program.runSilent(
+    "dotnet",
+
+    { "run",
+        "--project",
+        "../../SokoMakerEditor",
+        "--",
+        "--watchmemory",
+        "--repoPath=../..",
+        "--mod=pigsquad-slow-jam",
+        "--editor",
+    })

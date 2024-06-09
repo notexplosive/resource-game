@@ -1,7 +1,7 @@
 {
   "title": "That's a Resource",
   "author": "NotExplosive",
-  "editor_version": "0.6.0",
+  "editor_version": "0.6.2",
   "mod_version": "0.1.0",
   "default_tile": "floor",
   "tile_size": 64,
