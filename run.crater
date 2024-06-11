@@ -1,12 +1,9 @@
-program.runSilent(
-    "dotnet",
+---@diagnostic disable: undefined-global
+local dotnet = lib("dotnet")
 
-    { "run",
-        "--project",
-        "../../SokoMakerEditor",
-        "--",
-        "--watchmemory",
-        "--repoPath=../..",
-        "--mod=pigsquad-slow-jam",
-        "--editor",
-    })
+print("Generating Doc Snippets")
+dotnet.run("../../LuaDoc", { "--repoPath=../.." })
+files.copy("../../Manual/sokomaker.code-snippets", ".vscode")
+
+print("Running Editor")
+dotnet.runFork("../../SokoMakerEditor", { "--repoPath=../..", "--watchmemory", "--mod=pigsquad-slow-jam", "--editor" })
