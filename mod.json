@@ -20,14 +20,14 @@
   },
   "trait_enums": [
     {
-      "name": "Phase",
+      "name": "BlocksMovement",
       "supported_values": [
         {
           "name": "Empty",
           "value": 0
         },
         {
-          "name": "Solid",
+          "name": "Block",
           "value": 10
         }
       ]
@@ -51,8 +51,8 @@
   "swap_color": "FFFFFF",
   "room_size_rule": {
     "type": "width",
-    "size": 10,
-    "aspect_ratio": "1:1"
+    "size": 24,
+    "aspect_ratio": "16:9"
   },
   "prop_layer_rules": {
     "default_layer": 0,

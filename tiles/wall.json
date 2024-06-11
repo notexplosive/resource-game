@@ -3,6 +3,10 @@
     {
       "name": "Phase",
       "value": 10
+    },
+    {
+      "name": "BlocksMovement",
+      "value": 10
     }
   ],
   "hide_from_editor": false,

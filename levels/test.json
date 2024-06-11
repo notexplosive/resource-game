@@ -1,0 +1,54 @@
+{
+  "props": [],
+  "tiles": {
+    "content": {
+      "0,1": "wall",
+      "0,2": "wall",
+      "0,3": "wall",
+      "0,5": "wall",
+      "0,6": "wall",
+      "0,7": "wall",
+      "0,8": "wall",
+      "0,9": "wall",
+      "0,4": "wall"
+    }
+  },
+  "instance_variables": [],
+  "entities": [
+    {
+      "name": "tree",
+      "position": "3,3",
+      "instance_variables": [
+        {
+          "key": "color",
+          "value": "007700",
+          "type": 4
+        },
+        {
+          "key": "renderer",
+          "value": "SolidColor",
+          "type": 0
+        }
+      ],
+      "direction": "down"
+    },
+    {
+      "name": "rock",
+      "position": "7,2",
+      "instance_variables": [
+        {
+          "key": "renderer",
+          "value": "SolidColor",
+          "type": 0
+        },
+        {
+          "key": "color",
+          "value": "888888",
+          "type": 4
+        }
+      ],
+      "direction": "down"
+    }
+  ],
+  "rooms": []
+}

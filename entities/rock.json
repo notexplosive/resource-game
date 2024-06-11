@@ -1,6 +1,11 @@
 {
   "is_directional": false,
-  "traits": [],
+  "traits": [
+    {
+      "name": "BlocksMovement",
+      "value": 10
+    }
+  ],
   "hide_from_editor": false,
   "config_variables": [
     {
@@ -17,6 +22,14 @@
         "key": "color",
         "value": "888888",
         "type": 4
+      }
+    },
+    {
+      "copy_to_instance": true,
+      "data": {
+        "key": "resource",
+        "value": "value",
+        "type": 2
       }
     }
   ]
