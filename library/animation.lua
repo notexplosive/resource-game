@@ -73,6 +73,11 @@ function animation.bumpResource(mover, gridling, direction)
         tween:interpolate(resourcePosition:to(resourceExtendedPosition), extendDuration, "linear")
         tween:endMultiplex()
 
+        tween:callback(function()
+            local events = require "library.events"
+            events.onResourceHarvested("hand", gridling)
+        end)
+
         tween:startMultiplex()
         local returnDuration = 0.15
         tween:interpolate(resourceScale:to(1), returnDuration, "linear")

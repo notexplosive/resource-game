@@ -1,0 +1,51 @@
+todo:
+    - harvest animation
+    - resource get animation
+    - ui(???)
+    - inventory
+    - milling
+    - crafting
+
+
+GATHER
+Hand    -> Tree     => Leaf/Stick?
+Hand    -> Rock     => Flint
+Hand    -> Meadow   => Flower
+Hand    -> Person   => Word
+Axe     -> Tree     => Log
+Pickaxe -> Rock     => Ore
+
+CONVERT
+Ore     -> Furnace  => Ingot
+Log     -> Furnace  => Charcoal
+Log     -> Mill     => Plank
+Bouquet -> Person   => Heart
+
+
+CRAFT
+Stick + Flint   => Axe
+Log + Ingot     => Pickaxe
+Flint + Steel   => Tinder
+Flower + Flower => Boquet
+Ingot + Bone    => Steel
+Log + Steel     => Sword
+Steel + Steel   => Scissors
+
+GOAL
+
+
+Questions:
+- how do you get steel?
+- how do you get a furnace?
+- do resource nodes get used up?
+
+
+
+FEEDBACK
+
+NEW-PROJECT: Remove starting "Phase" trait
+
+TRAIT-EDITOR: When renaming a trait, we should reserialize all gridlings (I think this will work for free?)
+
+API: TweenableScale doesn't do anything if an object has no renderer
+API: be able to index layers by name as well as number (both in Gridling Editor and in Code)

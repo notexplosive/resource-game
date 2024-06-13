@@ -1,12 +1,26 @@
 local query     = require "library.query"
 local map       = require "library.map"
 local animation = require "library.animation"
+local gameplay  = require "library.gameplay"
 local events    = {}
 
 function events.onMoveSuccess(move)
     if move:movingEntity():templateName() == "player" then
         animation.characterMove(move)
         map.enterRoomAt(move:targetPosition())
+    end
+end
+
+function events.onResourceHarvested(tool, resourceNode)
+    local resourceName = resourceNode:templateName()
+    local resourceTemplate = nil
+
+    if resourceName == "rock" and tool == "hand" then
+        resourceTemplate = "flint"
+    end
+
+    if resourceTemplate then
+        local resource = gameplay.spawnResource(resourceTemplate, resourceNode.gridPosition)
     end
 end
 
