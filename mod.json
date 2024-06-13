@@ -70,6 +70,10 @@
     {
       "name": "Top",
       "shader": null
+    },
+    {
+      "name": "Tool",
+      "shader": null
     }
   ],
   "color_keys": [
